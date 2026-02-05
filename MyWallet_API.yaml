@@ -1,0 +1,51 @@
+type: collection.insomnia.rest/5.0
+name: MyWallet API
+meta:
+  id: wrk_7fe8ecd99ba44e6bbfb6f57e015c07a3
+  created: 1770265219418
+  modified: 1770265219418
+  description: ""
+collection:
+  - url: http://127.0.0.1:8000/api/token/
+    name: New Request
+    meta:
+      id: req_874d2cade6ee4dad9be03459b0bcd9a7
+      created: 1770265349896
+      modified: 1770265709288
+      isPrivate: false
+      description: ""
+      sortKey: -1770265349896
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "usuario1",
+          "password": "tu_contraseña"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_01603922d47b9ab377c7741dbcc516fa3163d8e6
+    created: 1770265219428
+    modified: 1770265219428
+environments:
+  name: Base Environment
+  meta:
+    id: env_01603922d47b9ab377c7741dbcc516fa3163d8e6
+    created: 1770265219423
+    modified: 1770265219423
+    isPrivate: false
