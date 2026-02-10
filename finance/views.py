@@ -1,3 +1,8 @@
+# Vista de bienvenida para la ruta principal
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("¡Bienvenido a MyWallet API!")
 from django.shortcuts import render
 from .serializers import UserSerializer, CategorySerializer, TransactionSerializer
 from rest_framework.response import Response
