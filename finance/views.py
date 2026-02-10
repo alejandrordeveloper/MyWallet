@@ -2,7 +2,7 @@
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("¡Bienvenido a MyWallet API!")
+    return HttpResponse("<h1>¡Bienvenido a MyWallet API!</h1><p>Utiliza la ruta /api/ para acceder a los endpoints de la API.</p>")
 from django.shortcuts import render
 from .serializers import UserSerializer, CategorySerializer, TransactionSerializer
 from rest_framework.response import Response
