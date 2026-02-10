@@ -1,1 +1,1 @@
-web: gunicorn mywallet.wsgi
+web: python manage.py collectstatic --noinput && gunicorn mywallet.wsgi
